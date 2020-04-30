@@ -1,0 +1,306 @@
+﻿Build1=Default,b4a.HelmetAPPV3
+File1=1.bal
+File10=continuarpress.png
+File11=DetenerEscaneo.png
+File12=DetenerEscaneoPress.png
+File13=dos (1).png
+File14=esc.png
+File15=imagenfuturista.jpg
+File16=ingresar.png
+File17=IngresarCascoID.bal
+File18=ingresarPress.png
+File19=IniciarEscaneo.png
+File2=agrecasec.png
+File20=IniciarEscaneoPress.png
+File21=main.bal
+File22=pantallaPrincipal.bal
+File23=Reescanear.png
+File24=ReescanearPress.png
+File25=registrarUsuarioPress.png
+File26=RegistrarVehiculo.bal
+File27=RegistroUsuario.bal
+File28=regitrarUsuario.png
+File29=TICKpng.png
+File3=agrecassecpress.png
+File30=tres1.png
+File31=uno (1).png
+File32=uno.png
+File33=wallpaperflare.com_wallpaper (1).jpg
+File34=wallpaperflare.com_wallpaper (2).jpg
+File35=wallpaperflare.com_wallpaper.jpg
+File4=agregarcascoprincipalsinpres.png
+File5=agregracascoprincipalpres.png
+File6=bluetoothoff (1).png
+File7=bluetoothon (1).png
+File8=candado (1).png
+File9=continuar.png
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup25=Default Group
+FileGroup26=Default Group
+FileGroup27=Default Group
+FileGroup28=Default Group
+FileGroup29=Default Group
+FileGroup3=Default Group
+FileGroup30=Default Group
+FileGroup31=Default Group
+FileGroup32=Default Group
+FileGroup33=Default Group
+FileGroup34=Default Group
+FileGroup35=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+IconFile=
+Library1=core
+Library2=qrcodereaderview
+Library3=runtimepermissions
+Library4=serial
+Library5=phone
+Library6=viewsex
+Library7=randomaccessfile
+Library8=sql
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~'AddManifestText(~\n~'<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="14"/>~\n~'<supports-screens android:largeScreens="true" ~\n~'    android:normalScreens="true" ~\n~'    android:smallScreens="true" ~\n~'    android:anyDensity="true"/>)~\n~'SetApplicationAttribute(android:icon, "@drawable/icon")~\n~'SetApplicationAttribute(android:label, "$LABEL$")~\n~'SetApplicationAttribute(android:theme, "@android:style/Theme.Holo")~\n~'End of default text.~\n~~\n~~\n~'This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="17"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true"~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~AddManifestText(<uses-feature android:name="android.hardware.telephony" android:required="false" />)~\n~AddManifestText(<uses-feature android:name="android.hardware.camera" android:required="false" />)~\n~AddManifestText(<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />)~\n~AddManifestText(<uses-feature android:name="android.hardware.camera.flash" android:required="false" />)~\n~'AddPermission("android.permission.ACCESS_COARSE_LOCATION")~\n~AddPermission("android.permission.INTERNET")~\n~AddPermission("android.permission.ACCESS_FINE_LOCATION")~\n~AddPermission("android.permission.WAKE_LOCK")~\n~AddPermission("android.permission.DEVICE_POWER")~\n~'AddPermission("android.permission.ACCESS_COARSE_UPDATES")~\n~AddPermission("android.permission.READ_PHONE_STATE")~\n~AddPermission("android.permission.VIBRATE")~\n~AddPermission("android.permission.CAMERA")~\n~AddPermission("android.permission.FLASHLIGHT")~\n~AddPermission("android.hardware.camera")~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~~\n~'AddApplicationText(<activity android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden"~\n~'			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"~\n~'			android:windowSoftInputMode="stateAlwaysHidden">~\n~'		</activity>)~\n~
+Module1=IngresarCascoID
+Module2=RegistrarVehiculo
+Module3=AsyncStreamsText
+Module4=pantallaPrincipal
+Module5=Usuario
+Module6=Usuarios
+Module7=Starter
+NumberOfFiles=35
+NumberOfLibraries=8
+NumberOfModules=7
+Version=8.3
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: HelmetAPPV3
+	#VersionCode: 1
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: portrait
+	#CanInstallToExternalStorage: False
+#End Region
+
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: True
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Dim dni As String
+	Dim clave As String
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	Private btnContinuarRegistro As Button
+	Private edtxtClave As EditText
+	Private edtxtDNI As EditText
+	Private lblClave As Label
+	Private lblDNI As Label
+	Private pnlRegistroUsuario As Panel
+	Private lblUno As Label
+	Private lblErroneo As Label
+	Private ProgressBar1 As ProgressBar
+	Private btnIngresar As Button
+	Private btnLimpiar As Button
+	Private lblCandado As Label
+	
+	Dim usuarios As Usuarios
+	
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+	Activity.LoadLayout("RegistroUsuario")
+	Activity.Title="Helmet APP - Registrar Usuario"
+	
+	btnContinuarRegistro.Visible=True 'si no se ingresa nada, los botones están desactivados
+	btnIngresar.Visible=True
+	btnContinuarRegistro.Enabled=False
+	btnIngresar.Enabled=False
+	
+	lblErroneo.Visible=False
+	usuarios.Initialize
+	
+	'limpiar base de datos
+	'usuarios.borrarTODO
+	
+	'agregar datos de prueba
+'	usuarios.insertarDNICLAVE(33558904,1234)  'mara
+'	usuarios.insertarDNICLAVE(33273698,1564)  'lucas
+	
+	'mostrar base de datos
+	'Dim data As List
+	usuarios.leerUSUARIOS
+	
+	
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+
+
+Sub btnContinuarRegistro_Click
+
+	Dim DNIusado As Boolean
+	
+	If edtxtDNI.Text.Length = 8 Then
+		If edtxtClave.Text.Length = 4 Then
+			
+			DNIusado=usuarios.chequearDNI(edtxtDNI.Text)  'para chequear que el dni ingresado no exista en la base de datos, devuelve TRUE si ya esta usado y FALSE en caso contrario
+			If DNIusado=True Then  'ya hay un usuario con el mismo DNI
+				lblErroneo.Visible=True
+				lblErroneo.Text="el DNI ingresado pertenece a un usuario ya registrado"
+				Log("ya hay un dni registrado")
+			Else        'DNI exitoso
+				Log("--------------------------------------------")
+				Log("dni ingresado válido")
+				lblErroneo.Visible=False
+				dni=edtxtDNI.Text
+				clave=edtxtClave.Text
+				usuarios.insertarDNICLAVE(dni,clave)
+				ProgressBar1.Enabled=True
+				Log("DNI y Clave ingresados en la base de datos")
+				Log("DNI: "&dni)
+				Log("CLAVE: "&clave)
+				StartActivity("IngresarCascoID")
+			End If
+			
+			
+		Else
+			lblErroneo.Text="clave errónea"
+			lblErroneo.Visible=True
+		End If
+	Else
+		lblErroneo.Text= "DNI erróneo"
+		lblErroneo.Visible=True
+	End If
+	
+End Sub
+
+Sub edtxtClave_TextChanged (Old As String, New As String)
+	If edtxtClave.Text <> ""  Then
+		If edtxtDNI.Text<>"" Then
+			btnContinuarRegistro.Enabled=True
+			btnIngresar.Enabled=True
+		Else
+			btnContinuarRegistro.Enabled=False
+			btnIngresar.Enabled=False
+		End If
+	Else
+		btnContinuarRegistro.Enabled=False
+		btnIngresar.Enabled=False
+	End If
+End Sub
+
+Sub edtxtDNI_TextChanged (Old As String, New As String)
+	If edtxtClave.Text <> ""  Then
+		If edtxtDNI.Text<>"" Then
+			btnContinuarRegistro.Enabled=True
+			btnIngresar.Enabled=True
+		End If
+	
+	Else
+		btnContinuarRegistro.Enabled=False
+		btnIngresar.Enabled=False
+	End If
+End Sub
+
+
+Sub btnIngresar_Click
+	Dim DniExistente As Boolean
+	Dim ClaveCorrecta As Boolean
+	DniExistente=False
+	ProgressBar1.Visible=True
+	
+	
+	If edtxtDNI.Text.Length = 8 Then
+		If edtxtClave.Text.Length = 4 Then
+			DniExistente= usuarios.chequearDNI(edtxtDNI.Text)  'chequea se existe el DNI ingresado
+			If DniExistente=True Then    'si existe chequea que la clave coincida con el DNI ingresado
+				ClaveCorrecta=usuarios.chequearCLAVE(edtxtDNI.Text,edtxtClave.Text)
+				If ClaveCorrecta=True Then
+					ProgressBar1.Visible=False
+					actividad(edtxtDNI.Text) 'decide hacia que actividad enviar al usuario
+					
+				End If
+				If ClaveCorrecta=False Then
+					lblErroneo.Text="La clave no coincide con el DNI ingresado"
+					lblErroneo.Visible=True
+					ProgressBar1.Visible=False
+				End If
+			End If
+			If DniExistente=False Then   'si no existe en la base de datos entrega un mensaje de error
+				lblErroneo.Text="Usuario Inexistente, por favor registre su DNI y su Clave"
+				lblErroneo.Visible=True
+				ProgressBar1.Visible=False
+			End If
+		Else
+			lblErroneo.Text="clave errónea"
+			ProgressBar1.Visible=False
+			lblErroneo.Visible=True
+		End If
+	Else
+		lblErroneo.Text= "DNI erróneo"
+		ProgressBar1.Visible=False
+		lblErroneo.Visible=True
+	End If
+	
+	
+End Sub
+
+
+
+
+
+Sub btnLimpiar_Click
+	usuarios.borrarTODO
+	usuarios.leerUSUARIOS
+End Sub
+
+Sub actividad (DniIngresado As String)
+	Dim existeHelmetID As Boolean
+	Dim existeMotoID As Boolean
+	dni=edtxtDNI.Text
+	existeHelmetID=usuarios.chequearHelmetId(DniIngresado)
+'	existeMotoID=
+	
+	If existeHelmetID=True Then
+		StartActivity("RegistrarVehiculo")
+	Else
+		StartActivity("IngresarCascoID")
+	End If
+End Sub
+
+
