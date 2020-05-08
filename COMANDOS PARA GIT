@@ -1,1 +1,2 @@
 git pull upstream master      //PARA ACTUALIZAR EL REPOSITORIO
+git push                     //PARA SUBIR A
