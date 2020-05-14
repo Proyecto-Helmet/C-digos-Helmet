@@ -1,2 +1,2 @@
-git pull upstream master      //PARA ACTUALIZAR EL REPOSITORIO
+git pull upstream master      //PARA ACTUALIZAR EL REPOSITORIO EN LA PC
 git push                     //PARA SUBIR A
